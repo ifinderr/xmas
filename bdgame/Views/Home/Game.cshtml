@@ -1,0 +1,105 @@
+﻿<!-- AUDIO PLAYER -->
+<audio class="audio-player" autoplay loop>
+	<source src="/audio/song.mp3" type="audio/mpeg">
+</audio>
+
+<!-- BACKGROUND CONTAINER -->
+<div class="bg-container snowy">
+	<!-- GLASS BALL -->
+	<div class="glass-ball rotate"></div>
+	<!-- TOP LIGHT -->
+	<div class="top-light"></div>
+	<!-- PAGE CONTENT -->
+	<div class="page-content">
+		<div class="table-container">
+			<div class="table-cell">
+
+
+				<!-- TITLE -->
+				<h1 class="snow-text">@ViewBag.Slide pálya</h1>
+				<!-- INFO CONTAINER -->
+				<div class="container">
+					<!-- CONTACT TEXT -->
+					<div class="shadow-box">
+						@switch (ViewBag.Slide)
+						{
+							case 1:
+								<h3>Mi volt az első mez számod?</h3>
+								<div class="shadow-box">
+									Egy kis segítség ha nem tudod :) <a href="javascript:void(0);" onclick="site.setHelp('/img/page_1.jpg')" data-bs-toggle="modal" data-bs-target="#helpmodal">Klikk ide</a>
+								</div>
+								break;
+							case 2:
+								<h3>Melyik országban talàlkoztal a Mikulassal?</h3>
+								<div class="shadow-box">
+									Egy kis segítség ha nem tudod :) <a href="javascript:void(0);" onclick="site.setHelp('/img/page_2.jpg')" data-bs-toggle="modal" data-bs-target="#helpmodal">Klikk ide</a>
+								</div>
+								break;
+							case 3:
+								<h3>Melyik musicalt láttad először a Madách színházban</h3>
+								<div class="shadow-box">
+									Egy kis segítség ha nem tudod :) <a href="javascript:void(0);" onclick="site.setHelp('/img/page_3.jpg')" data-bs-toggle="modal" data-bs-target="#helpmodal">Klikk ide</a>
+								</div>
+								break;
+							case 4:
+								<h3>Melyik városba utaztunk Arisszékkal decemberben?</h3>
+								<div class="shadow-box">
+									Egy kis segítség ha nem tudod :) <a href="javascript:void(0);" onclick="site.setHelp('/img/page_4.jpg')" data-bs-toggle="modal" data-bs-target="#helpmodal">Klikk ide</a>
+								</div>
+								break;
+							case 5:
+								<h3>Mit láttál először az operában</h3>
+								<div class="shadow-box">
+									Egy kis segítség ha nem tudod :) <a href="javascript:void(0);" onclick="site.setHelp('/img/page_5.jpg')" data-bs-toggle="modal" data-bs-target="#helpmodal">Klikk ide</a>
+								</div>
+								break;
+							case 6:
+								<h3>Hány éves voltál, amikor Lego tortát kaptál?</h3>
+								<div class="shadow-box">
+									Egy kis segítség ha nem tudod :) <a href="javascript:void(0);" onclick="site.setHelp('/img/page_6.jpg')" data-bs-toggle="modal" data-bs-target="#helpmodal">Klikk ide</a>
+								</div>
+								break;
+							case 7:
+								<h3>Hány órakor születtél</h3>
+								<div class="shadow-box">
+									Egy kis segítség ha nem tudod :) <a href="javascript:void(0);" onclick="site.setHelp('/img/page_7.jpg')" data-bs-toggle="modal" data-bs-target="#helpmodal">Klikk ide</a>
+								</div>
+								break;
+						}
+					</div>
+					<!-- CONTACT FORM -->
+					<div class="contact">
+						<div id="contact-result">
+							<!-- CONTACT RESULT HOLDER -->
+						</div>
+						<form class="contact-form ajax-form" name="contact">
+							<div class="form-group">
+								<input id="name" type="text" class="form-control" value="" placeholder="Válasz... (kisbetűvel, ékezet nélkül)">
+							</div>
+							<div class="form-group">
+								<input class="btn-submit" type="button" onclick="site.verifySlide('@ViewBag.Slide')" value="Tovább">
+								<img id="data_loader" style="display:none" alt="" src="~/img/loader.gif" height="25px" width="25px" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Start Modal -->
+<div class="modal fade" data-keyboard="false" data-backdrop="static" id="helpmodal" aria-labelledby="exampleModalLabel" aria-hidden="true" tabindex="-1">
+	<div class="modal-dialog modal-lg modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header border-bottom p-3">
+				<h5 class="modal-title" id="exampleModalLabel">Segítség</h5>
+				<button type="button" class="btn btn-icon btn-close" data-bs-dismiss="modal" id="close-modal"><i class="uil uil-times fs-4 text-dark"></i></button>
+			</div>
+			<div class="modal-body p-3 pt-4" style="text-align:center">
+				<img id="help" style="width: 50%; height: auto" />
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End modal -->

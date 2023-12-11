@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Szülinap</title>
+  <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css?v=@Guid.NewGuid().ToString()" />
+  <link rel="stylesheet" href="~/css/site.css?v=@Guid.NewGuid().ToString()" asp-append-version="true" />
+  <link rel="stylesheet" href="~/bdgame.styles.css?v=@Guid.NewGuid().ToString()" asp-append-version="true" />
+  <link href="~/css/font-awesome.min.css?v=@Guid.NewGuid().ToString()" rel="stylesheet" type="text/css">
+  <link href="~/css/fullpage.css?v=@Guid.NewGuid().ToString()" rel="stylesheet" type="text/css">
+  <link href="~/css/style.css?v=@Guid.NewGuid().ToString()" rel="stylesheet" type="text/css">
+  <link href="~/css/custom.css?v=@Guid.NewGuid().ToString()" rel="stylesheet" type="text/css">
+  <link href="~/css/sweetalert.css?v=@Guid.NewGuid().ToString()" rel="stylesheet" />
+</head>
+<body>
+
+  @RenderBody()
+
+  <script src="~/lib/jquery/dist/jquery.min.js?v=@Guid.NewGuid().ToString()"></script>
+  <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js?v=@Guid.NewGuid().ToString()"></script>
+  <script src="~/js/sweetalert.min.js?v=@Guid.NewGuid().ToString()"></script>
+  <!-- SCRIPTS  -->
+  <script type="text/javascript" src="~/js/countdown.min.js?v=@Guid.NewGuid().ToString()"></script>
+  <script type="text/javascript" src="~/js/jquery.fullpage.min.js?v=@Guid.NewGuid().ToString()"></script>
+  <script type="text/javascript" src="~/js/three.canvas.js?v=@Guid.NewGuid().ToString()"></script>
+  <script type="text/javascript" src="~/js/snowy.js?v=@Guid.NewGuid().ToString()"></script>
+  <script type="text/javascript" src="~/js/script.js?v=@Guid.NewGuid().ToString()"></script>
+  
+  <script src="~/js/site.js?v=@Guid.NewGuid().ToString()" asp-append-version="true"></script>
+  @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+

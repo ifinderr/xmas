@@ -1,0 +1,59 @@
+﻿<!-- AUDIO PLAYER -->
+<audio class="audio-player" autoplay loop>
+  <source src="audio/song.mp3" type="audio/mpeg">
+</audio>
+
+<!-- BACKGROUND CONTAINER -->
+<div class="bg-container snowy">
+  <!-- GLASS BALL -->
+  <div class="glass-ball rotate"></div>
+  <!-- TOP LIGHT -->
+  <div class="top-light"></div>
+  <!-- PAGE CONTENT -->
+  <div class="page-content">
+    <div class="fullpage">
+      <!-- HOME SECTION -->
+      <div id="home" class="section active">
+        <!-- TITLE -->
+        <h1 class="snow-text">Hamarosan, addig lapozz le :)</h1>
+        <!-- COUNTER -->
+        <div class="snow-box">
+          <div class="countdown" data-date="December 24 2023 7:36:00"></div>
+        </div>
+      </div>
+      <!-- INFO SECTION -->
+      <div id="info" class="section">
+        <div class="container">
+          <!-- INFO TEXT -->
+          <div class="shadow-box">
+            <h2>Drága Kisfiam</h2>
+            <p>
+              Idén egy különleges meglepetéssel készültem neked. Ez nem egy hagyományos meglepi hanem annál sokkal több.
+              Ahhoz, hogy ki tudd bontani az ajándékod, a mai naptól minden nap egy kérdésre kell válaszolnod, itt. Ha minden válaszra jól válaszoltál 24.-én 7:36 ki tudod bontani az ajándékod.
+              Nem kell megijedni, könnyűek a kérdések és te egy okos srác vagy. Élvezd a játékot.  <br />Szeretlek, Anya
+              <br /><br />
+              Játékszabály:
+              <br />
+              <ul>
+                <li>Minden nap egy pályát teljesíthetsz</li>
+                <li>Ha kihagysz egy napot akkor a következő nap annyival több pályát kell teljesítened amennyit kihagytál</li>
+                <li>Minden nap 10:00 nyílik meg a következő pálya. Kivéve vasárnap akkor már 7:36</li>
+                <li>Minden kérdésre egy jó válasz van, ha elrontod, próbálkozhatsz ameddig nem találod el</li>
+                <li>Minden választ <u>kisbetűvel, ékezet nélkül</u> add meg</li>
+              </ul>
+            </p>
+          </div>
+          <!-- ENTER BUTTON -->
+          <a class="btn-default" href="javascript:void(0);" onclick="site.verifyNextSlide();">
+            Belépés a játékba
+            <img id="data_loader" style="display:none" alt="" src="~/img/loader.gif" height="25px" width="25px" />
+          </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
