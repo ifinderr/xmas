@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("bdgame")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e1d3f33b0d5362c48eef923d4e0b9dfa5138d6b1")]
 [assembly: System.Reflection.AssemblyProductAttribute("bdgame")]
 [assembly: System.Reflection.AssemblyTitleAttribute("bdgame")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
