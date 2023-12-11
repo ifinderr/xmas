@@ -1,10 +1,10 @@
 ﻿
-var day_2 = new Date("Dec 11, 2023 10:00:00").getTime();
-var day_3 = new Date("Dec 11, 2023 10:00:00").getTime();
-var day_4 = new Date("Dec 11, 2023 10:00:00").getTime();
-var day_5 = new Date("Dec 11, 2023 10:00:00").getTime();
-var day_6 = new Date("Dec 11, 2023 10:00:00").getTime();
-var day_7 = new Date("Dec 11, 2023 10:00:00").getTime();
+var day_2 = new Date("Dec 19, 2023 10:00:00").getTime();
+var day_3 = new Date("Dec 20, 2023 10:00:00").getTime();
+var day_4 = new Date("Dec 21, 2023 10:00:00").getTime();
+var day_5 = new Date("Dec 22, 2023 10:00:00").getTime();
+var day_6 = new Date("Dec 23, 2023 10:00:00").getTime();
+var day_7 = new Date("Dec 24, 2023 7:36:00").getTime();
 
 var site = {
 
@@ -60,7 +60,7 @@ var site = {
                 location.href = "/Home/Game"
               }
               else {
-                site.warningAlert("2. pálya", "Sikeresen vetted az első akadályt de a 2. pálya még nem nyílt ki ..de hamarosan.");
+                site.warningAlert("2. pálya", "Sikeresen vetted az első akadályt de a következő pálya még nem nyílt ki ..de hamarosan.");
               }
               break;
             case "3":
@@ -68,7 +68,7 @@ var site = {
                 location.href = "/Home/Game"
               }
               else {
-                site.successAlertAutoClose("3. pálya", "Sikeresen vetted a második akadályt de a 3. pálya még nem nyílt ki ..de hamarosan.");
+                site.successAlertAutoClose("3. pálya", "Sikeresen vetted a második akadályt de a következő pálya még nem nyílt ki ..de hamarosan.");
               }
               break;
             case "4":
@@ -76,7 +76,7 @@ var site = {
                 location.href = "/Home/Game"
               }
               else {
-                site.successAlertAutoClose("4. pálya", "Sikeresen vetted a harmadik akadályt de a 4. pálya még nem nyílt ki ..de hamarosan.");
+                site.successAlertAutoClose("4. pálya", "Sikeresen vetted a harmadik akadályt de a következő pálya még nem nyílt ki ..de hamarosan.");
               }
               break;
             case "5":
@@ -84,7 +84,7 @@ var site = {
                 location.href = "/Home/Game"
               }
               else {
-                site.successAlertAutoClose("5. pálya", "Sikeresen vetted a negyedik akadályt de a 5. pálya még nem nyílt ki ..de hamarosan.");
+                site.successAlertAutoClose("5. pálya", "Sikeresen vetted a negyedik akadályt de a következő pálya még nem nyílt ki ..de hamarosan.");
               }
               break;
             case "6":
@@ -92,7 +92,7 @@ var site = {
                 location.href = "/Home/Game"
               }
               else {
-                site.successAlertAutoClose("6. pálya", "Sikeresen vetted az ötödik akadályt de a 6. pálya még nem nyílt ki ..de hamarosan.");
+                site.successAlertAutoClose("6. pálya", "Sikeresen vetted az ötödik akadályt de a következő pálya még nem nyílt ki ..de hamarosan.");
               }
               break;
             case "7":
@@ -100,7 +100,7 @@ var site = {
                 location.href = "/Home/Game"
               }
               else {
-                site.successAlertAutoClose("7. pálya", "Sikeresen vetted a hatodik akadályt de a 7. pálya még nem nyílt ki ..de hamarosan.");
+                site.successAlertAutoClose("7. pálya", "Sikeresen vetted a hatodik akadályt de a következő pálya még nem nyílt ki ..de hamarosan.");
               }
               break;
             case "8":
@@ -148,7 +148,7 @@ var site = {
         }
         else {
 
-          site.successAlertAutoClose("Ügyes :)", "Sikeresen vetted az első akadályt de a következő " + slide_index + ". pálya még nem nyílt ki ..de hamarosan!");
+          site.successAlertAutoClose("Ügyes :)", "Sikeresen vetted az első akadályt de a következő pálya még nem nyílt ki ..de hamarosan!");
           setTimeout(function () {
             location.href = "/Home"
           }, 6000);
@@ -177,7 +177,7 @@ var site = {
         }
         else {
 
-          site.successAlertAutoClose("Nagyon jól nyomod!", "Sikeresen vetted a második akadályt is de a következő " + slide_index + ". pálya még nem nyílt ki ..de hamarosan!");
+          site.successAlertAutoClose("Nagyon jól nyomod!", "Sikeresen vetted a második akadályt is de a következő pálya még nem nyílt ki ..de hamarosan!");
           setTimeout(function () {
             location.href = "/Home"
           }, 6000);
@@ -206,7 +206,7 @@ var site = {
         }
         else {
 
-          site.successAlertAutoClose("Cool!", "Sikeresen vetted a harmadik akadályt is de a következő " + slide_index + ". pálya még nem nyílt ki ..de hamarosan!");
+          site.successAlertAutoClose("Cool!", "Sikeresen vetted a harmadik akadályt is de a következő pálya még nem nyílt ki ..de hamarosan!");
           setTimeout(function () {
             location.href = "/Home"
           }, 6000);
@@ -235,7 +235,7 @@ var site = {
         }
         else {
 
-          site.successAlertAutoClose("Cool!", "Sikeresen vetted a negyedik akadályt is de a következő " + slide_index + ". pálya még nem nyílt ki ..de hamarosan!");
+          site.successAlertAutoClose("Cool!", "Sikeresen vetted a negyedik akadályt is de a következő pálya még nem nyílt ki ..de hamarosan!");
           setTimeout(function () {
             location.href = "/Home"
           }, 6000);
@@ -264,7 +264,7 @@ var site = {
         }
         else {
 
-          site.successAlertAutoClose("Cool!", "Sikeresen vetted az ötödik akadályt is de a következő " + slide_index + ". pálya még nem nyílt ki ..de hamarosan!");
+          site.successAlertAutoClose("Cool!", "Sikeresen vetted az ötödik akadályt is de a következő pálya még nem nyílt ki ..de hamarosan!");
           setTimeout(function () {
             location.href = "/Home"
           }, 6000);
@@ -293,7 +293,7 @@ var site = {
         }
         else {
 
-          site.successAlertAutoClose("Cool!", "Sikeresen vetted az hatodik akadályt is de a következő " + slide_index + ". pálya még nem nyílt ki ..de hamarosan!");
+          site.successAlertAutoClose("Cool!", "Sikeresen vetted az hatodik akadályt is de a következő pálya még nem nyílt ki ..de hamarosan!");
           setTimeout(function () {
             location.href = "/Home"
           }, 6000);
